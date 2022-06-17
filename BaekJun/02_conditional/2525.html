@@ -1,0 +1,15 @@
+<script>
+  let hour = 23;
+  let minute = 50;
+
+  let cookTime = 10;
+
+  minute += cookTime;
+
+  if (minute / 60 >= 1) {
+    hour += Math.floor(minute / 60);
+    minute %= 60;
+  }
+  hour %= 24;
+  console.log(hour, minute);
+</script>
